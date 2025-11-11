@@ -1,0 +1,65 @@
+#hero-section {
+    width: 100%;
+    background-color: #d36238;
+    display: flex;    
+    flex-direction: row;
+}
+
+#div-left {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#div-right {
+    width: 50%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#contact-button {
+    background-color: #ffffff00;
+    border: solid 2px #ffffff;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+
+}
+
+#contact-button:hover {
+    border: solid 2px #ffffff61;
+    color: #ffffff61;
+}
+
+#div-about-me {
+    height: 600px;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#div-images {
+    height: 500px;
+    display: flex;
+    flex-direction: row;     
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#div-images img {
+    max-width: 100%;
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#div-card {
+    background-color: #d362386b; 
+    width: 25%;
+    border-radius: 8px;
+}
