@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+
+<head>
+    <title>Tim Klaassen - Contact</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+ <!-- Body -->
+<body>
+
+    <!-- Global Header -->
+     <header>
+        <div class="header">
+            <a href="../html/home.html" class="logo">Tim Klaassen</a>
+            <div class="header-right">
+            <a href="../html/home.html">Home</a>
+            <a href="../html/about_me.html">Over Mij</a>
+            <a class="active" href="../html/contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero sectie -->
+    <div id="hero-section">
+        <h1 style="margin: 0px;">Neem contact op!</h1>
+        <p style="width: 350px;">Wil je contact met me opnemen? Vul dan gerust het onderstaande formulier in. Ik probeer je bericht zo snel mogelijk te beantwoorden!</p>
+    </div>
+
+    <div id="contact-form">
+        <form action="../php/contact.php" method="POST">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Tim" required>
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Klaassen" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tim@gmail.com" required>
+        
+            <label>Je bericht:</label>
+            <textarea id="text-area" name="message" required></textarea>
+        
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <!-- Global footer -->
+    <footer>
+        <div id="footer-left">
+            <h2>Neem contact op!</h1>
+            <p>Om contact met mij op te nemen kun je naar het volgende email adres een e-mail sturen: timklaassen1612@gmail.com of gebruik maken van het contact formulier op de contact pagina.</p>
+        </div>
+        <div id="footer-middle">
+            <h2>Navigatie:</h2>
+            <a href="#">Over mij</a>
+            <a href="#">Contact</a>
+            <a href="../html/home.html">Home</a>
+        </div>
+        <div id="footer-right">
+            <h2>Volg mij op Social Media</h2>
+            <!-- Hier komen Social Icons -->
+        </div>    
+    </footer>
+
+</body>
+
+
+</html>
