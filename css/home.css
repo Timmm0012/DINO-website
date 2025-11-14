@@ -36,6 +36,23 @@
     color: #ffffff61;
 }
 
+#read-more-button {
+    background-color: #ffffff00;
+    border: solid 2px #ffffff;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+
+}
+
+#read-more-button:hover {
+    border: solid 2px #ffffff61;
+    color: #ffffff61;
+}
+
 #div-about-me {
     height: 600px;
     margin-top: 5%;
@@ -59,8 +76,15 @@
 }
 
 #div-card {
-    background-color: #d362386b; 
+    background-color: #d36238; 
     width: 25%;
     border-radius: 8px;
     padding: 15px;
+}
+
+#div-my-work {
+    height: 700px;
+    background-color: rgb(242, 242, 242);
+    padding-top: 5%;
+    padding-right: 10%;
 }

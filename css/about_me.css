@@ -1,0 +1,18 @@
+
+#hero-section {
+    background-color: #d36238;
+    height: 300px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-work {
+    height: 700px;
+    background-color: white;
+}
+
