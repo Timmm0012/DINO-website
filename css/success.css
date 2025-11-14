@@ -12,7 +12,10 @@
 }
 
 #div-success {
-  background-color: blue;
+  background-color: #edeef2;
+  height: 600px;
+  display: flex;
+  justify-content: center;
 }
 
 #contact-form {

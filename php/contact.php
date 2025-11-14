@@ -6,7 +6,9 @@ require 'src/Exception.php';
 require 'src/PHPMailer.php';
 require 'src/SMTP.php';
 
-var_dump($_POST);
+$env = parse_ini_file(__DIR__ . '/../.env');
+
+var_dump($env);
 
 $mail = new PHPMailer(true);
 
@@ -14,8 +16,8 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'timklaassen1612@@gmail.com';
-    $mail->Password   = 'xvye ewkw kaix nyzh';
+    $mail->Username   = $env['email'];
+    $mail->Password   = $env['password'];
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
 
@@ -26,7 +28,8 @@ try {
     $mail->Body    = $_POST['message'];
 
     $mail->send();
-    echo "Mail verstuurd!";
+    header("Location: ../html/mailer/success.html");
+    exit;
 } catch (Exception $e) {
     echo "Mailer Error: {$mail->ErrorInfo}";
 }
