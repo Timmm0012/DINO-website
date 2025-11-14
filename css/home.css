@@ -87,4 +87,12 @@
     background-color: rgb(242, 242, 242);
     padding-top: 5%;
     padding-right: 10%;
+    padding-left: 10%;
+}
+
+#div-my-work-card {
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px;
+
 }

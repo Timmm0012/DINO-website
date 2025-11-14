@@ -28,26 +28,22 @@
     </div>
 
     <div id="contact-form">
-        <form action="../php/contact.php">
+        <form action="../php/contact.php" method="POST">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Tim">
-          
+            <input type="text" id="fname" name="firstname" placeholder="Tim" required>
+        
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Klaassen">
-
+            <input type="text" id="lname" name="lastname" placeholder="Klaassen" required>
+        
             <label for="email">Email</label>
-            <input type="email" id="lname" name="Email" placeholder="tim@gmail.com">
-
+            <input type="email" id="email" name="email" placeholder="tim@gmail.com" required>
+        
             <label>Je bericht:</label>
-            <textarea id="text-area">
-                
-            </textarea>
-          
-            </select>
+            <textarea id="text-area" name="message" required></textarea>
+        
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
-          </form>
-
+        </form>
     </div>
 
     <!-- Global footer -->
@@ -58,17 +54,14 @@
         </div>
         <div id="footer-middle">
             <h2>Navigatie:</h2>
-            <ul>
-              <li><a href="../html/home.html">Home</a></li>
-              <li><a href="#">Over mij</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+            <a href="#">Over mij</a>
+            <a href="#">Contact</a>
+            <a href="../html/home.html">Home</a>
         </div>
         <div id="footer-right">
             <h2>Volg mij op Social Media</h2>
             <!-- Hier komen Social Icons -->
-        </div>
-            
+        </div>    
     </footer>
 
 </body>
