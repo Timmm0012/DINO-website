@@ -1,6 +1,6 @@
 #hero-section {
     width: 100%;
-    background-color: #d36238;
+    background: linear-gradient(135deg, #d36238 0%, #ecaa92 100%);
     display: flex;    
     flex-direction: row;
 }
@@ -75,7 +75,7 @@
 }
 
 #div-card {
-    background-color: #d36238;
+    background: linear-gradient(135deg, #d36238 0%, #ecaa92 100%);
     width: 100%;
     border-radius: 8px;
     padding: 15px;
@@ -103,6 +103,235 @@
     margin-right: 10%;
 }
 
-#test {
-    height: 500px;
+#div-goes-section {
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #d36238 0%, #ecaa92 100%)
 }
+
+#div-goes-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#goes-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+#goes-map iframe {
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+#goes-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.goes-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goes-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.goes-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.goes-card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+/* Social Deal sectie */
+#div-social-deal {
+    padding: 80px 10%;
+    background: white;
+}
+
+#div-social-deal h4 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#social-deal-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+#social-deal-text h2 {
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#social-deal-text p {
+    color: black;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#social-deal-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #d3623829 0%, #ecaa925e 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255 78 78 / 20%);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.stat-label {
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Extra over mij sectie */
+#div-extra-about {
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #d36238 0%, #ecaa92 100%);
+}
+
+#div-extra-about h4 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#extra-about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.extra-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 35px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.extra-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.extra-card h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.extra-card p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* CV Download sectie */
+#div-cv-download {
+    padding: 100px 10%;
+    background: white;
+    text-align: center;
+}
+
+#cv-download-content h2 {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#cv-download-content p {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#cv-download-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 18px 45px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#cv-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+#cv-download-btn i {
+    margin-right: 10px;
+}
+
+/* Fade-in animatie */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
